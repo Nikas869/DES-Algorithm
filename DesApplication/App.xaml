@@ -1,9 +1,9 @@
-﻿<Application x:Class="Des.App"
+﻿<Application x:Class="DesApplication.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Des"
+             xmlns:local="clr-namespace:DesApplication"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>
