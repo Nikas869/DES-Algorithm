@@ -28,10 +28,14 @@ namespace DesAlgorithm
         private byte[] SetParityBits(byte[] keyByteArray)
         {
             logger.Log($"Generated key (7 bytes): {BitConverter.ToString(keyByteArray)}");
+
             // Reverse
             keyByteArray = keyByteArray.Select(b => (byte)((b * 0x0202020202 & 0x010884422010) % 1023)).ToArray();
             logger.Log($"Reversed key (7 bytes): {BitConverter.ToString(keyByteArray)}");
+
             var keyBitArray = new BitArray(keyByteArray);
+            logger.Log($"As bits: {keyBitArray.ToBitString()}");
+
             var resultBitArray = new BitArray(64);
             int counter = 0;
             for (int i = 0, j = 0; i < keyBitArray.Length; i++, j++)
@@ -52,10 +56,15 @@ namespace DesAlgorithm
                     resultBitArray[j] = false;
                 }
             }
+
             var result = new byte[8];
             resultBitArray.CopyTo(result, 0);
+            logger.Log($"With parity bits: {BitConverter.ToString(result)}");
+            logger.Log($"As bits: {resultBitArray.ToBitString()}");
+
             // Reverse
             result = result.Select(b => (byte)((b * 0x0202020202 & 0x010884422010) % 1023)).ToArray();
+            logger.Log($"And reversed: {BitConverter.ToString(result)}");
             return result;
         }
 
