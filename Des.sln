@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesApplication", "DesApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesAlgorithm", "DesAlgorithm\DesAlgorithm.csproj", "{6346DC17-C099-44E0-8521-4628F7AB45F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesAlgorithm.Tests", "DesAlgorithm.Tests\DesAlgorithm.Tests.csproj", "{A8A3323F-5B76-431A-85F0-F0DF5BD206E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6346DC17-C099-44E0-8521-4628F7AB45F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6346DC17-C099-44E0-8521-4628F7AB45F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6346DC17-C099-44E0-8521-4628F7AB45F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A3323F-5B76-431A-85F0-F0DF5BD206E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A3323F-5B76-431A-85F0-F0DF5BD206E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A3323F-5B76-431A-85F0-F0DF5BD206E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A3323F-5B76-431A-85F0-F0DF5BD206E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

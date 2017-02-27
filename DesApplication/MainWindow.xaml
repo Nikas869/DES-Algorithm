@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <Grid Margin="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="2*"/>
@@ -45,7 +45,7 @@
                         Grid.Row="1"
                         Content="Generate new key"
                         Margin="5" 
-                        Height="Auto"/>
+                        Height="Auto" Click="GenerateKeyButton_Click"/>
             </Grid>
             <TextBox x:Name="MessageTextBox" 
                      Grid.Row="1"
