@@ -36,10 +36,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Des.cs" />
+    <Compile Include="DesDomain\Encryptor.cs" />
+    <Compile Include="DesDomain\FFunction.cs" />
+    <Compile Include="DesDomain\PermutedBlock.cs" />
+    <Compile Include="DesDomain\PermutedBlockService.cs" />
+    <Compile Include="DesDomain\PermutedKey.cs" />
+    <Compile Include="DesDomain\PermutedKeyFactory.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
